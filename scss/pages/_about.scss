@@ -1,0 +1,251 @@
+// contact banner wrapper
+.about-banner-wrapper {
+    .about-image {
+        position: relative;
+        img {
+            object-fit: cover;
+            height: 750px;
+            width: 100%;
+            @include breakpoint(medium) {
+                height: 500px;
+                object-position: left;
+            }
+        }
+    }
+    .about-banner-heading {
+        @include positionCenter();
+        @include breakpoint(medium) {
+            top: 40%;
+            transform: translate(-50%, -40%);
+        }
+        a {
+            font-weight: bold;
+            color: $color-pink;
+            font-size: 74.5px;
+            @include breakpoint(medium) {
+                font-size: 40px;
+            }
+            @include breakpoint(smaller) {
+                font-size: 21px;
+            }
+        }
+        i {
+            font-size: 50px;
+            padding: 0 20px;
+            @include breakpoint(smaller) {
+                font-size: 21px;
+                padding: 0 10px;
+            }
+        }
+        span {
+            font-size: 74.5px;
+            @include breakpoint(medium) {
+                font-size: 40px;
+            }
+            @include breakpoint(smaller) {
+                font-size: 21px;
+            }
+        }
+    }
+}
+
+//yoga lab wrapper
+.yoga-lab-wrapper {
+    margin: 80px 79px;
+    @include breakpoint(medium) {
+        margin: 50px 0;
+    }
+    img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    .yoga-lab-section {
+        margin-left: 15px;
+        margin-right: -30px;
+        @include breakpoint(medium) {
+            margin: 30px 0 0 0;
+        }
+        h4 {
+            text-transform: capitalize;
+            font-weight: bold;
+            color: $color-pink;
+            margin-bottom: 80px;
+            @include breakpoint(medium) {
+                margin-bottom: 30px;
+            }
+        }
+        p {
+            width: 800px;
+            max-width: 100%;
+        }
+    }
+    .hero-slider-wrap {
+        position: relative;
+        margin-top: 80px;
+        @include breakpoint(smaller) {
+            margin-top: 30px;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        .slick-list {
+            margin-left: -15px;
+            margin-right: -15px;
+            .slick-slide {
+                outline: none;
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+        }
+    }
+}
+
+//studio special wrapper
+.studio-wrapper {
+    margin-top: 80px;
+    @include breakpoint(medium) {
+        margin-top: 50px;
+    }
+    .studio-heading {
+        text-align: center;
+        padding: 150px 0;
+        background: $color-light-gray;
+        @include breakpoint(medium) {
+            padding: 80px 0;
+        }
+        h2 {
+            text-transform: capitalize;
+        }
+    }
+    .smart-yoga-heading {
+        display: flex;
+        margin: 31px 79px;
+        align-items: center;
+        @include breakpoint(smaller) {
+            margin: 31px 0;
+        }
+        h4 {
+            text-transform: capitalize;
+        }
+        .smart-yoga-line {
+            position: relative;
+            height: 6px;
+            flex-grow: 1;
+            background: $color-light-gray;
+            margin-left: 20px;
+        }
+    }
+    .smart-yoga-image {
+        margin-left: 79px;
+        margin-bottom: 31px;
+        @include breakpoint(medium) {
+            margin-left: 0;
+        }
+        img {
+            width: 100%;
+        }
+    }
+    .smart-yoga-content {
+        margin: 0 79px 31px 31px;
+        @include breakpoint(medium) {
+            margin: 0 0 31px 0;
+        }
+        p {
+            margin-bottom: 31px;
+        }
+        a {
+            @extend %yoga-btn;
+        }
+    }
+    #smart-yoga-content2 {
+        margin: 0 0 31px 79px;
+        @include breakpoint(medium) {
+            margin: 0 0 31px 0;
+        }
+    }
+    .smart-order {
+        @include breakpoint(medium) {
+            order: 2;
+        }
+    }
+    #smart-yoga-image2 {
+        margin-right: 79px;
+        margin-left: 31px;
+        margin-bottom: 31px;
+        @include breakpoint(medium) {
+            margin-right: 0;
+            margin-left: 0;
+        }
+    }
+}
+
+//training wrapper
+.training-wrapper {
+    padding: 80px 79px;
+    .question-section {
+        .card {
+            background-color: #fff;
+            background-clip: none;
+            border: none;
+            border-radius: 0rem;
+            margin-bottom: 30px;
+
+            .card-header {
+                padding: 10px 0;
+                background-color: none;
+                border-bottom: none;
+                background-color: #ffff;
+                position: relative;
+                .btn {
+                    text-decoration: none;
+                    padding: 0;
+                    color: $color-light-pink;
+                    font-size: 18px;
+                    font-weight: bold;
+                    white-space: initial;
+                    text-align: left;
+                    padding-left: 20px;
+                    &:focus,
+                    .btn.focus {
+                        outline: 0;
+                        box-shadow: none;
+                    }
+                }
+                .btn-link {
+                    &:before {
+                        font-family: "fontAwesome";
+                        content: "\f0d7";
+                        position: absolute;
+                        bottom: 10px;
+                        font-size: 20px;
+                        left: 5px;
+                    }
+                    &.collapsed:before {
+                        /* symbol for "collapsed" panels */
+                        content: "\f0da";
+                        position: absolute;
+                        bottom: 10px;
+                        font-size: 20px;
+                        left: 5px;
+                    }
+                }
+            }
+
+            .card-body {
+                padding: 0 0 0 5px;
+            }
+            .card-body-content {
+                padding-left: 20px;
+                p {
+                    font-size: 18px;
+                }
+                span {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

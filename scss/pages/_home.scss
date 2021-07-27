@@ -1,0 +1,596 @@
+//banner wrapper
+.banner-wrapper {
+    position: relative;
+    .hero-slider-wrapper {
+        .slider-item {
+            position: relative;
+            .banner-image {
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                    height: 750px;
+                    @media (min-width: 1440px) {
+                        height: auto;
+                    }
+                    @include breakpoint(wide) {
+                        object-position: left;
+                    }
+                    @include breakpoint(small) {
+                        height: 500px;
+                    }
+                    @include breakpoint(iPhone5) {
+                        height: 400px;
+                    }
+                }
+            }
+            .banner-content {
+                padding: 148px 0 151px 0;
+                position: absolute;
+                top: 0;
+                right: 94px;
+                @include breakpoint(medium) {
+                    right: 15px;
+                }
+                @include breakpoint(small) {
+                    padding: 50px 0;
+                    left: 15px;
+                }
+                h1 {
+                    width: 565px;
+                    max-width: 100%;
+                    font-weight: bold;
+                    letter-spacing: 0.75px;
+                    @include breakpoint(small) {
+                        width: 100%;
+                    }
+                }
+                p {
+                    padding: 66px 0 82px 0;
+                    width: 543px;
+                    max-width: 100%;
+                    @include breakpoint(small) {
+                        padding: 20px 0;
+                        width: 100%;
+                    }
+                }
+                a {
+                    @extend %yoga-btn;
+                }
+            }
+        }
+    }
+}
+
+//pregnant wrapper
+.pregnant-wrapper {
+    position: relative;
+    .pregnant-image {
+        img {
+            width: 100%;
+            object-fit: cover;
+            height: 807px;
+            @media (min-width: 1440px) {
+                height: auto;
+            }
+            @include breakpoint(small) {
+                height: 500px;
+                object-position: right;
+            }
+            @include breakpoint(iPhone5) {
+                height: 400px;
+            }
+        }
+    }
+    .pregnant-content {
+        padding: 183px 0 175px 0;
+        position: absolute;
+        top: 0;
+        margin-left: 94px;
+        @include breakpoint(medium) {
+            margin-left: 15px;
+        }
+        @include breakpoint(small) {
+            padding: 50px 0;
+        }
+        h2 {
+            width: 635px;
+            max-width: 100%;
+            font-weight: bold;
+            letter-spacing: 0.75px;
+            @include breakpoint(small) {
+                width: 100%;
+            }
+        }
+        p {
+            padding: 66px 0 82px 0;
+            width: 543px;
+            max-width: 100%;
+            @include breakpoint(small) {
+                padding: 30px 0;
+                width: 100%;
+            }
+        }
+        a {
+            @extend %yoga-btn;
+        }
+    }
+}
+
+//program warrper
+.program-wrapper {
+    margin-bottom: 109px;
+    @include breakpoint(small) {
+        margin-bottom: 50px;
+    }
+    .program-section {
+        h6 {
+            font-weight: bold;
+            letter-spacing: 0.25px;
+            text-transform: capitalize;
+        }
+        p {
+            line-height: 1.57;
+            letter-spacing: 0.21px;
+        }
+    }
+    #program1 {
+        margin-top: 136px;
+        @include breakpoint(medium) {
+            margin-top: 30px;
+            text-align: center;
+        }
+        h6 {
+            width: 269px;
+            text-align: center;
+            margin-top: 34px;
+            @include breakpoint(medium) {
+                width: auto;
+            }
+        }
+    }
+    #program2 {
+        text-align: center;
+        margin-top: 111px;
+        @include breakpoint(medium) {
+            margin-top: 30px;
+        }
+        h6 {
+            margin-top: 10px;
+        }
+    }
+    #program3 {
+        text-align: right;
+        margin-top: 80px;
+        @include breakpoint(wide) {
+            text-align: center;
+        }
+        @include breakpoint(medium) {
+            margin-top: 30px;
+        }
+        h6 {
+            margin-top: 26px;
+            width: 310px;
+            @include breakpoint(wide) {
+                width: auto;
+            }
+        }
+        p {
+            width: 380px;
+            @include breakpoint(wide) {
+                width: auto;
+            }
+        }
+    }
+}
+
+//Yoga Breathing Wrapper
+.breathing-wrapper {
+    background-size: cover;
+    .row {
+        flex-wrap: nowrap;
+        @include breakpoint(small) {
+            flex-wrap: wrap;
+        }
+    }
+    .col-md-5 {
+        @include breakpoint(small) {
+            order: 2;
+        }
+    }
+    .breathing-section {
+        padding: 127px 0 167px 0;
+        margin-left: 79px;
+        @include breakpoint(medium) {
+            margin-left: 0;
+        }
+        @include breakpoint(small) {
+            padding: 50px 0;
+        }
+        h3 {
+            width: 454px;
+            max-width: 100%;
+            font-weight: bold;
+            letter-spacing: 0.59px;
+        }
+        p {
+            padding: 40px 0 42px 0;
+            width: 543px;
+            max-width: 100%;
+        }
+        a {
+            @extend %yoga-btn;
+            padding: 17px 32px 18px 36px;
+        }
+    }
+    .breathing-image {
+        margin-left: -15px;
+        margin-top: 80px;
+        position: relative;
+        @include breakpoint(wide) {
+            margin-right: 79px;
+        }
+        @include breakpoint(medium) {
+            margin-right: 0;
+        }
+        @include breakpoint(small) {
+            margin-top: 50px;
+            margin-left: 0;
+        }
+        img {
+            width: 629px;
+            max-width: 100%;
+            height: 439px;
+            object-fit: cover;
+            z-index: 999;
+            position: relative;
+            @include breakpoint(small) {
+                width: 100%;
+            }
+            @include breakpoint(smaller) {
+                height: auto;
+            }
+        }
+    }
+    .breathing-leaf {
+        position: absolute;
+        bottom: 80px;
+        left: -30px;
+    }
+    .breathing-shape {
+        position: absolute;
+        bottom: 50px;
+        right: 45px;
+    }
+}
+
+//Join Now to get 50% off wrapper
+.join-wrapper {
+    position: relative;
+    img {
+        width: 100%;
+        height: 608px;
+        object-fit: cover;
+        @media (min-width: 1440px) {
+            height: auto;
+        }
+        @include breakpoint(small) {
+            height: 500px;
+            object-position: left;
+        }
+    }
+    .join-section {
+        padding: 106px 0 133px 0;
+        position: absolute;
+        top: 0;
+        right: 94px;
+        @include breakpoint(medium) {
+            right: 15px;
+        }
+        @include breakpoint(small) {
+            padding: 50px 0;
+            left: 15px;
+        }
+        h3 {
+            width: 454px;
+            max-width: 100%;
+            font-weight: bold;
+            letter-spacing: 0.59px;
+            @include breakpoint(small) {
+                width: 100%;
+            }
+        }
+        p {
+            padding: 55px 0 42px 0;
+            width: 543px;
+            max-width: 100%;
+            @include breakpoint(small) {
+                padding: 30px 0;
+                width: 100%;
+            }
+        }
+        a {
+            @extend %yoga-btn;
+            padding: 17px 32px 18px 36px;
+        }
+    }
+}
+
+//Gallery Wrapper
+.gallery-wrapper {
+    background-size: cover;
+    .gallery-heading {
+        padding: 92px 0 55px 0;
+        text-align: center;
+        @include breakpoint(small) {
+            padding: 50px 0;
+        }
+        h4 {
+            font-weight: bold;
+            letter-spacing: 0.58px;
+            text-transform: capitalize;
+        }
+        p {
+            width: 879px;
+            max-width: 100%;
+            margin: 0 auto;
+            margin-top: 44px;
+            @include breakpoint(small) {
+                margin-top: 30px;
+            }
+        }
+    }
+    .hero-slider {
+        margin: 0 79px;
+        position: relative;
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        .slider-item {
+            box-shadow: 11.4px 17.6px 23.3px 0.7px rgba(12, 13, 12, 0.1);
+            margin-bottom: 94px;
+            .gallery-content {
+                padding: 39px 0 38px 0;
+                text-align: center;
+                background: $color-accent-white;
+                h5 {
+                    font-weight: bold;
+                    line-height: 1;
+                    letter-spacing: 0.33px;
+                }
+                p {
+                    width: 282px;
+                    max-width: 100%;
+                    line-height: 1.47;
+                    letter-spacing: 0.17px;
+                    font-size: 17px;
+                    margin: 0 auto;
+                    margin-top: 33px;
+                }
+            }
+        }
+        .slick-list {
+            margin-left: -51px;
+            margin-right: -51px;
+            .slick-slide {
+                outline: none;
+                margin-left: 51px;
+                margin-right: 51px;
+            }
+        }
+        .slick-prev {
+            left: -80px;
+            top: 35%;
+            position: absolute;
+            background: $color-gray;
+            border: none;
+            font-size: 0;
+            outline: none;
+            color: $color-pink;
+            font-weight: bold;
+            border-radius: 50px;
+            padding: 0px 17px;
+            z-index: 9;
+        }
+        .slick-prev:after {
+            content: "\f104";
+            font-family: "fontAwesome";
+            font-size: 30px;
+        }
+        .slick-next {
+            right: -80px;
+            top: 35%;
+            position: absolute;
+            background: $color-gray;
+            border: none;
+            font-size: 0;
+            outline: none;
+            color: $color-pink;
+            font-weight: bold;
+            border-radius: 50px;
+            padding: 0px 17px;
+            z-index: 9;
+        }
+        .slick-next:after {
+            content: "\f105";
+            font-family: "fontAwesome";
+            font-size: 30px;
+        }
+        .slick-dots {
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            z-index: 10;
+            text-align: center;
+        }
+        .slick-dots li {
+            list-style: none;
+            width: 15px;
+            height: 15px;
+            background-color: $color-dark-gray;
+            display: inline-block;
+            margin: 0px 15px;
+            border-radius: 50px;
+            button {
+                display: none;
+            }
+        }
+        .slick-dots li.slick-active {
+            background-color: $color-pink;
+        }
+    }
+}
+
+//Training Yoga Wrapper
+.training-wrapper {
+    .row {
+        flex-wrap: nowrap;
+        @include breakpoint(small) {
+            flex-wrap: wrap;
+        }
+    }
+    background: $color-pink;
+    padding: 0 79px;
+    @include breakpoint(medium) {
+        padding: 0;
+    }
+    .video-section {
+        position: relative;
+        line-height: 0;
+        margin: 156px 0 161px 0;
+        @include breakpoint(small) {
+            margin: 50px 0;
+        }
+        .video {
+            width: 100%;
+            box-shadow: 11.4px 17.6px 23.3px 0.7px rgba(12, 13, 12, 0.1);
+            object-fit: cover;
+            @include breakpoint(smaller) {
+                height: 250px !important;
+            }
+        }
+        .playpause {
+            cursor: pointer;
+            @include positionCenter();
+        }
+    }
+
+    .yoga-training-section {
+        margin: 188px 0 201px 54px;
+        @include breakpoint(medium) {
+            margin-left: 0;
+        }
+        @include breakpoint(small) {
+            margin: 0 0 50px 0;
+        }
+        h3 {
+            font-weight: bold;
+            letter-spacing: 0.59px;
+        }
+        p {
+            width: 543px;
+            max-width: 100%;
+            margin: 53px 0;
+            @include breakpoint(small) {
+                width: 100%;
+                margin: 30px 0;
+            }
+        }
+    }
+    .social-icon {
+        a {
+            background: $color-dark-gray;
+            color: $color-accent-white;
+            padding: 5px 10px 5px 10px;
+            font-size: 20px;
+            margin: 0 22px;
+            transition: 0.5s ease-in-out;
+            &:first-child {
+                margin-left: 0;
+            }
+            &:hover {
+                color: $color-pink;
+                background-color: black;
+            }
+            .fa-facebook {
+                padding: 5px 3px 5px 3px;
+            }
+        }
+    }
+}
+
+// Get In Touch Wrapper
+.get-in-touch-wrapper {
+    background-size: cover;
+    .get-in-touch-section {
+        padding: 90px 0 71px 0;
+        text-align: center;
+        @include breakpoint(small) {
+            padding: 50px 0;
+        }
+        h4 {
+            font-weight: bold;
+            letter-spacing: 0.58px;
+            margin-bottom: 57px;
+            @include breakpoint(small) {
+                margin-bottom: 30px;
+            }
+        }
+        p {
+            width: 879px;
+            max-width: 100%;
+            margin: 0 auto;
+            line-height: 1.57;
+            letter-spacing: 0.21px;
+        }
+    }
+    .contact-form {
+        text-align: center;
+        padding-bottom: 61px;
+        @include breakpoint(small) {
+            padding-bottom: 50px;
+        }
+        input[type="text"],
+        textarea {
+            width: 65.3%;
+            max-width: 100%;
+            height: 62px;
+            padding: 24px 0px 23px 40px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            margin-bottom: 33px;
+            resize: vertical;
+            background-color: #ebebeb;
+            color: #8e8e8e;
+            outline: none;
+            @include breakpoint(small) {
+                width: 100%;
+            }
+        }
+        input[type="submit"] {
+            background-color: $color-light-pink;
+            padding: 17px 21px 18px 25px;
+            border: none;
+            cursor: pointer;
+            width: 203px;
+            margin: 0 auto;
+            display: block;
+            line-height: 1.57;
+            letter-spacing: 0.21px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: $color-dark-gray;
+            box-shadow: inset 0 0 0 0 $color-pink;
+            transition: 0.5s ease-in-out;
+            margin-top: 20px;
+            @include breakpoint(small) {
+                margin-top: 0;
+            }
+            &:hover {
+                @include button-animation-hover();
+                color: $color-accent-white;
+            }
+        }
+    }
+}

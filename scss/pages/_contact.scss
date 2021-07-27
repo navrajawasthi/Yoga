@@ -1,0 +1,91 @@
+// contact banner wrapper
+.contact-banner-wrapper {
+    .contact-image {
+        position: relative;
+        img {
+            object-fit: cover;
+            height: 750px;
+            width: 100%;
+            @include breakpoint(medium){
+                height: 500px;
+                object-position: left;
+            }
+        }
+    }
+    .contact-banner-heading{
+        @include positionCenter();
+        @include breakpoint(medium){
+            top: 40%;
+            transform: translate(-50% , -40%);
+        }
+        a{
+            font-weight: bold;
+            color: $color-pink;
+             font-size: 74.5px;
+              @include breakpoint(medium) {
+    font-size: 40px;
+  }
+    @include breakpoint(smaller) {
+    font-size: 21px;
+  }
+        }
+        i{
+            font-size: 50px;
+            padding: 0 20px;
+             @include breakpoint(smaller) {
+    font-size: 21px;
+    padding: 0 10px;
+  }
+        }
+        span{
+            font-size: 74.5px;
+             @include breakpoint(medium) {
+    font-size: 40px;
+  }
+   @include breakpoint(smaller) {
+    font-size: 21px;
+  }
+        }
+    }
+}
+
+// get in touch wrapper contact page 
+#page2-section2{
+    .get-in-touch-section{
+        padding: 50px 0;
+        h4{
+            margin-bottom: 30px;
+        }
+    }
+    .contact-form{
+        @include breakpoint(medium){
+            padding-bottom: 30px;
+        }
+    }
+    input[type="text"],
+        textarea {
+           width: 100%;
+            padding: 24px 0px 23px 20px;
+        }
+        input[type="submit"] {
+            @include breakpoint(small) {
+                margin-top: 0;
+            }
+            &:hover {
+                @include button-animation-hover();
+                color: $color-accent-white;
+            }
+}
+.google-map{
+    iframe{
+        width: 100%;
+        height: 460px;
+         @include breakpoint(smaller) {
+    height: 300px;
+  }
+    }
+    @include breakpoint(medium){
+        padding-bottom: 50px;
+    }
+}
+}

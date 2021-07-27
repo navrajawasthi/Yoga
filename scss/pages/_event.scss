@@ -1,0 +1,63 @@
+// events banner wrapper
+.event-banner-wrapper {
+    .event-image {
+        position: relative;
+        img {
+            object-fit: cover;
+            height: 750px;
+            width: 100%;
+            @include breakpoint(medium){
+                height: 500px;
+                object-position: left;
+            }
+        }
+    }
+    .event-banner-heading{
+        @include positionCenter();
+        @include breakpoint(medium){
+            top: 40%;
+            transform: translate(-50% , -40%);
+        }
+        a{
+            font-weight: bold;
+            color: $color-pink;
+             font-size: 74.5px;
+              @include breakpoint(medium) {
+    font-size: 40px;
+  }
+    @include breakpoint(smaller) {
+    font-size: 21px;
+  }
+        }
+        i{
+            font-size: 50px;
+            padding: 0 20px;
+             @include breakpoint(smaller) {
+    font-size: 21px;
+    padding: 0 10px;
+  }
+        }
+        span{
+            font-size: 74.5px;
+             @include breakpoint(medium) {
+    font-size: 40px;
+  }
+   @include breakpoint(smaller) {
+    font-size: 21px;
+  }
+        }
+    }
+}
+
+//stay tune wrapper
+.stay-tune-wrapper{
+    margin: 150px 79px ;
+    h5{
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+    .stay-tune-para{
+        margin-bottom: 30px;
+    }
+
+}
